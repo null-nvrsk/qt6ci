@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.14)
 
-project(qt6ci-3-1 LANGUAGES CXX)
+project(qt6ci-3-3 LANGUAGES CXX)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
@@ -14,9 +14,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(QT NAMES Qt6 Qt5 COMPONENTS Core REQUIRED)
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Core REQUIRED)
 
-add_executable(qt6ci-3-1
+add_executable(qt6ci-3-3
   main.cpp
   test.h
   test.cpp
 )
-target_link_libraries(qt6ci-3-1 Qt${QT_VERSION_MAJOR}::Core)
+target_link_libraries(qt6ci-3-3 Qt${QT_VERSION_MAJOR}::Core)
