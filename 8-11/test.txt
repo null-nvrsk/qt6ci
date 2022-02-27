@@ -1,0 +1,22 @@
+hello
+1
+2
+3
+4
+5
+what
+is
+that
+????
+
+//-----------------------------------------------------------------------------
+void readLines(QFile &file)
+{
+    if(!file.isReadable()) return;
+    file.seek(0);
+
+    while(!file.atEnd())
+    {
+        qInfo() << file.readLine();
+    }
+}
